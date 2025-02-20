@@ -105,7 +105,7 @@ if [ "$(cat .built_gcc_step1 2>/dev/null)" != "${GCC}" ]; then
 	if [ ! -d "download/${NEWLIB}" ]; then
 		echo "Downloading Newlib..."
 		rm -rf download/newlib*
-		downloadAndExtract https://sourceware.org/pub/newlib/${NEWLIB}.tar.gz
+		downloadAndExtract ftp://sourceware.org/pub/newlib/${NEWLIB}.tar.gz
 	fi
 
 	echo "Building GCC (step 1)..."
